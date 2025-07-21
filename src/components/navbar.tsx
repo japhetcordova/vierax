@@ -11,7 +11,6 @@ import {
     NavigationMenuViewport
 } from "./ui/navigation-menu";
 
-import Theme from "./theme";
 
 export default function Navbar() {
     return (
@@ -19,9 +18,9 @@ export default function Navbar() {
 
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid gap-2 p-4 w-48">
+                        <ul className="grid gap-2 w-48">
                             <li>
                                 <NavigationMenuLink href="/product/1">
                                     Product 1
@@ -39,16 +38,13 @@ export default function Navbar() {
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>About</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <div className="p-4 w-48">
+                        <div className=" w-48">
                             <NavigationMenuLink href="/about">
                                 About us
                             </NavigationMenuLink>
                         </div>
                     </NavigationMenuContent>
-                </NavigationMenuItem>
-                
-                <Theme/>
-                
+                </NavigationMenuItem>      
             </NavigationMenuList>
 
             <NavigationMenuIndicator /> 
