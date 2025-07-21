@@ -2,15 +2,21 @@
 
 import { Switch } from "./ui/switch";
 import { useTheme } from "next-themes";
-const Themetoggle = () =>{
+const ThemeToggle = () =>{
     const {theme, setTheme} = useTheme();
+
+    const isDark = theme === "dark";
+    const handleCheckedChange = (checked: boolean) =>{
+        setTheme(checked ? "dark" : "light");
+    }
+
     return(
-        <div>
-            <Switch
-                onClick={() => setTheme( theme === "light" ? "dark" : "light")}
-            />
-        </div>
+        <Switch
+            aria-label="Toggle theme"
+            checked={isDark}
+            onCheckedChange={handleCheckedChange}
+        />
     )
 }
 
-export default Themetoggle;
+export default ThemeToggle;
