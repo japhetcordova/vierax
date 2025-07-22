@@ -5,15 +5,15 @@ import { useTheme } from "next-themes";
 const ThemeToggle = () =>{
     const {theme, setTheme} = useTheme();
 
-    const isDark = theme === "dark";
+    const isLight = theme === "light";
     const handleCheckedChange = (checked: boolean) =>{
-        setTheme(checked ? "dark" : "light");
+        setTheme(checked ? "light" : "dark");
     }
 
     return(
         <Switch
             aria-label="Toggle theme"
-            checked={isDark}
+            checked={isLight}
             onCheckedChange={handleCheckedChange}
         />
     )
