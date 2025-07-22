@@ -1,5 +1,4 @@
 "use client"
-
 import Image from "next/image";
 import { Button } from "./ui/button"
 import Themetoggle from "./theme-toggle";
@@ -28,7 +27,17 @@ const ProfileHead = ({ name, location, role, profileImage }: ProfileHeadProps) =
             <div className="flex-1 ml-4">
                 <div className="flex flex-col w-full">
                     <div className="flex justify-between items-center w-full">
-                        <h1 className="text-xl md:text-2xl font-bold">{name}</h1>
+                        <div className="flex justify-baseline">
+                            <h1 className="text-xl md:text-2xl font-bold"> {name} </h1>
+                        <Image 
+                            src="/verified.svg"
+                            alt="verifed-logo"
+                            width="24"
+                            height="24"
+                            className="ml-2"
+                        ></Image>
+                        </div>
+                        
                         <Themetoggle />
                     </div>
                     <div className="flex mb-4">
