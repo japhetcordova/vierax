@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import { Button } from "./ui/button"
-import Themetoggle from "./theme-toggle";
+import {ThemeButton} from "./theme-button";
 import { CalendarDays, Mail, TrophyIcon, MapPin } from "lucide-react"
 
 interface ProfileHeadProps {
@@ -13,7 +13,7 @@ interface ProfileHeadProps {
 
 const ProfileHead = ({ name, location, role, profileImage }: ProfileHeadProps) => {
     return (
-        <div className="flex items-center w-full">
+        <div className="flex">
             <div className="relative w-20 h-20 md:w-40 md:h-40 rounded-2xl overflow-hidden flex-shrink-0">
                 <Image
                     src={profileImage}
@@ -27,18 +27,18 @@ const ProfileHead = ({ name, location, role, profileImage }: ProfileHeadProps) =
             <div className="flex-1 ml-4">
                 <div className="flex flex-col w-full">
                     <div className="flex justify-between items-center w-full">
-                        <div className="flex justify-baseline">
+                        <div className="flex items-baseline">
                             <h1 className="text-xl md:text-2xl font-bold"> {name} </h1>
                         <Image 
                             src="/verified.svg"
-                            alt="verifed-logo"
+                            alt="verified-logo"
                             width="24"
                             height="24"
                             className="ml-2"
                         ></Image>
                         </div>
                         
-                        <Themetoggle />
+                        <ThemeButton />
                     </div>
                     <div className="flex mb-4">
                         <p className="text-sm md:text-base flex items-center font-semibold">
