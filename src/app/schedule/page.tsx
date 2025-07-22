@@ -13,9 +13,16 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 
-export default function Calendar24() {
+interface DateTimePickerProps{
+  onDateChange?: (date: Date | undefined) => void;
+  onTimeChange?: (time: string) => void;
+  initialDate?: Date;
+  initialTime?: string;
+}
+
+export default function DateTimePicker({onDateChange, onTimeChange, initialDate, initialTime="10:30:00"}: DateTimePickerProps) {
   const [open, setOpen] = React.useState(false)
-  const [date, setDate] = React.useState<Date | undefined>(undefined)
+  const [date, setDate] = React.useState<Date | undefined>(initialDate)
 
   return (
     <div className="flex gap-4">
@@ -42,6 +49,7 @@ export default function Calendar24() {
               onSelect={(date) => {
                 setDate(date)
                 setOpen(false)
+                onDateChange?.(date)
               }}
             />
           </PopoverContent>
@@ -55,7 +63,8 @@ export default function Calendar24() {
           type="time"
           id="time-picker"
           step="1"
-          defaultValue="10:30:00"
+          defaultValue={initialTime}
+          onChange={(e) => onTimeChange?.(e.target.value)}
           className="bg-background appearance-none [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none"
         />
       </div>
