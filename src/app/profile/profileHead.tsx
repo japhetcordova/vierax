@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Button } from "../../components/ui/button"
 import {ThemeButton} from "../../components/theme-button";
-import { CalendarDays, Mail, TrophyIcon, MapPin } from "lucide-react"
+import { CalendarDays, Mail, TrophyIcon, MapPin, ChevronRight } from "lucide-react"
 
 interface ProfileHeadProps {
     name: string,
@@ -47,14 +47,14 @@ const ProfileHead = ({ name, location, role, profileImage }: ProfileHeadProps) =
                         </p>
                     </div>
                     <div>
-                        <p className="text-sm md:text-base font-bold">{role}</p>
+                        <p className="text-sm md:text-base font-semibold">{role}</p>
                     </div>
                     <div className="flex flex-wrap gap-2 mt-2">
                         <Button size="sm">
-                            <CalendarDays className="h-4 w-4" />Schedule a Call
+                            <CalendarDays className="h-4 w-4" />Schedule a Call <ChevronRight/>
                         </Button>
                         <Button size="sm" variant="outline">
-                            <Mail className="h-4 w-4" />Send Email
+                            <Mail className="h-4 w-4" />Send Email 
                         </Button>
                         <Button variant="champion_orange" size="sm">
                             <TrophyIcon/> UMTC Hackathon 2025 Champion
