@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardTitle, CardContent, CardHeader, } from "./ui/card";
+import { Card, CardTitle, CardContent, CardHeader, } from "../../../components/ui/card";
 import { BriefcaseBusiness } from "lucide-react";
 
 

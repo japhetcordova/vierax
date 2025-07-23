@@ -1,12 +1,13 @@
 import JaphCard from "../../components/japhcard"
-import { Timeline } from "../../components/timeline"
+import { Timeline } from "./body/experience"
+import { About } from "./body/about"
 export const ProfileBody = () =>{
     return(
         <div className="flex flex-col gap-y-2 w-full mt-4">
             <div className="flex flex-col md:flex-row gap-x-2 w-full">
                 <div className="flex flex-col flex-1 gap-y-2 basis-1">
                     <div className="basis-1/2">
-                        <JaphCard/>
+                        <About/>
                     </div>
                     <div className="basis-1/2">
                         <JaphCard/>
