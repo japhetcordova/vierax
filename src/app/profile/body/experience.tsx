@@ -23,7 +23,7 @@ export function Timeline() {
                 </CardTitle>
             </CardHeader>
             <CardContent className="mt-0 pl-3.5">
-                <div className="relative border-l-1 border-ring pl-3.5 ">
+                <div className="relative border-l-1 border-ring pl-3.5">
                     {experiences.map((exp, idx) => (
                     <div key={idx} className="relative mb-2 group">
                         <div className="absolute -left-5 top-1 w-3 h-3 rounded-full bg-background border-2 border-ring -mx-0 group-hover:bg-primary duration-150" />

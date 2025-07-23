@@ -1,8 +1,13 @@
-import JaphCard from "../../components/japhcard"
 import { Timeline } from "./body/experience"
 import { About } from "./body/about"
 import { Beyond } from "./body/beyond"
 import { Stack } from "./body/tech-stack"
+import { Connect } from "./body/connect"
+import { Blog } from "./body/blog"
+import { Certifications } from "./body/recent-certifications"
+import { Projects } from "./body/recent-projects"
+import { Recommendation } from "./body/recommendations"
+
 export const ProfileBody = () =>{
     return(
         <div className="flex flex-col gap-y-2 w-full mt-4">
@@ -26,25 +31,25 @@ export const ProfileBody = () =>{
                 </div>  
                 
                 <div className="flex-3">
-                    <JaphCard/>
+                    <Projects/>
                 </div>                 
             </div>
             <div className="flex flex-col md:flex-row gap-x-2 w-full">
                 <div className="flex-1">
-                    <JaphCard/>
+                    <Certifications/>
                 </div>  
                 
-                <div className="flex-3">
-                    <JaphCard/>
+                <div className="flex-1">
+                    <Recommendation/>
                 </div>                 
             </div>
             <div className="flex flex-col md:flex-row gap-x-2 w-full">
                 <div className="flex-2">
-                    <JaphCard/>
+                    <Connect/>
                 </div>  
                 
                 <div className="flex-3">
-                    <JaphCard/>
+                    <Blog/>
                 </div>                 
             </div>
         </div>
