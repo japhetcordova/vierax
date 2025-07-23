@@ -18,7 +18,7 @@ export function Timeline() {
             <CardHeader>
                 <CardTitle className="m-0">
                     <div className="flex items-center text-xl">
-                        <BriefcaseBusiness className="h-4 w-4 mr-1 flex items-end text-muted-foreground"/> Experience
+                        <BriefcaseBusiness className="h-4 w-4 mr-2 flex items-end text-muted-foreground"/> Experience
                     </div>
                 </CardTitle>
             </CardHeader>
