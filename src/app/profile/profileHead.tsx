@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
-import { Button } from "./ui/button"
-import {ThemeButton} from "./theme-button";
+import { Button } from "../../components/ui/button"
+import {ThemeButton} from "../../components/theme-button";
 import { CalendarDays, Mail, TrophyIcon, MapPin } from "lucide-react"
 
 interface ProfileHeadProps {
