@@ -1,10 +1,10 @@
 "use client"
-import ProfileHead from "@/components/profileHead";
-import { ProfileBody } from "@/components/profileBody";
+import ProfileHead from "@/app/profile/profileHead";
+import { ProfileBody } from "@/app/profile/profileBody";
 
 const Page = () => {
     return(
-        <div>
+        <div className="flex flex-col gap-y-4 mt-8">
             <ProfileHead
                 name="Japhet Cordova"
                 location="Davao, Philippines"
