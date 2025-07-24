@@ -7,6 +7,13 @@ export function Certifications(){
     const action = true;
     const link = "/profile";
 
+    const Certificates = [
+        {certificate: "Cert1", company: "comp1"},
+        {certificate: "Cert2", company: "comp2"},
+        {certificate: "Cert3", company: "comp3"},
+        {certificate: "Cert4", company: "comp4"},
+    ]
+
     return(
         <Card className="py-4 h-full">
             <CardHeader>
@@ -27,8 +34,16 @@ export function Certifications(){
                 )}
                 
             </CardHeader>
-            <CardContent className="mt-0 pl-3.5">
-
+            <CardContent className="mt-0 pl-3.5 gap-2 flex flex-col">
+                {Certificates.map((cert, idx) => (
+                    <div
+                        key={idx}
+                        className="w-full bg-background rounded-md p-2 hover:bg-accent transition-colors duration-150"
+                    >
+                        <h1 className="text-sm font-semibold mb-0.5">{cert.certificate}</h1>
+                        <p className="text-xs text-muted-foreground">{cert.company}</p>
+                    </div>
+                ))}
             </CardContent>
         </Card>
     )

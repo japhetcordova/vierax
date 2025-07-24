@@ -2,10 +2,25 @@ import { Card, CardTitle, CardContent, CardHeader, CardAction} from "../../../co
 import { ChartBar } from "lucide-react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+
+import * as React from "react"
+import Autoplay from "embla-carousel-autoplay"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 export function Recommendation(){
     
     const action = false;
     const link = "/profile";
+
+    const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  )
 
     return(
         <Card className="py-4 h-full">
@@ -28,7 +43,24 @@ export function Recommendation(){
                 
             </CardHeader>
             <CardContent className="mt-0 pl-3.5">
-
+                <Carousel
+                    plugins={[plugin.current]}
+                    className="w-full max-w-xs"
+                    >
+                    <CarouselContent>
+                        {Array.from({ length: 5 }).map((_, index) => (
+                        <CarouselItem key={index}>
+                            <div className="p-1">
+                            <Card>
+                                <CardContent className="flex aspect-square items-center justify-center p-2">
+                                <span className="text-4xl font-semibold">{index + 1}</span>
+                                </CardContent>
+                            </Card>
+                            </div>
+                        </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                    </Carousel>
             </CardContent>
         </Card>
     )
