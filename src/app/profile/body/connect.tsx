@@ -40,6 +40,10 @@ export function Connect(){
                         <h1 className="font-semibold mb-1">Let&apos;s Talk</h1>
                         <div
                             className="flex-1 flex justify-between bg-background2 rounded-md p-2 hover:bg-accent transition-colors duration-150 cursor-pointer"
+                            role="button"
+                            tabIndex={0}
+                            aria-label="Schedule a call via Calendly"
+                            onKeyDown={(e) => e.key === 'Enter' && window.open('https://calendly.com/japhetcordova9/schedule-a-call', '_blank')}
                             onClick={() => window.open('https://calendly.com/japhetcordova9/schedule-a-call', '_blank')}
                         >
                             <h1 className="text-sm  font-semibold mb-0.5">Schedule a Call</h1>
@@ -50,6 +54,7 @@ export function Connect(){
                         <h1 className="font-semibold mb-1">Speaking Engagements</h1>
                         <div
                             className="w-full bg-background2 rounded-md p-2 transition-colors duration-150 r"
+                            
                         >
                             <p className="text-xs text-muted-foreground">Available for speaking at events about software development and emerging technologies.</p>
                             <a className="text-sm font-semibold mb-0.5 mt-1 hover:underline hover:cursor-pointer flex items-center"
@@ -62,6 +67,10 @@ export function Connect(){
                         <div className="flex gap-2">
                             <div
                                 className="w-full flex justify-center   bg-background2 rounded-md p-2 hover:bg-accent transition-colors duration-150 cursor-pointer"
+                                role="button"
+                                tabIndex={0}
+                                aria-label="Visit GitHub profile"
+                                onKeyDown={(e) => e.key === 'Enter' && window.open('https://github.com/japhetcordova', '_blank')}
                                 onClick={() => window.open('https://github.com/japhetcordova', '_blank')}
                             >
                                 <svg 
@@ -76,6 +85,10 @@ export function Connect(){
                             </div>
                             <div
                                 className="w-full   flex justify-center bg-background2 rounded-md p-2 hover:bg-accent  transition-colors duration-150 cursor-pointer"
+                                role="button"
+                                tabIndex={0}
+                                aria-label="Visit LinkedIn profile"
+                                onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.linkedin.com/in/japhet-cordova-2aa591223/', '_blank')}
                                 onClick={() => window.open('https://www.linkedin.com/in/japhet-cordova-2aa591223/', '_blank')}
                             >
                                 <svg 
@@ -90,6 +103,10 @@ export function Connect(){
                             </div>
                             <div
                                 className="w-full   flex justify-center bg-background2 rounded-md p-2 hover:bg-accent  transition-colors duration-150 cursor-pointer"
+                                role="button"
+                                tabIndex={0}
+                                aria-label="Visit Facebook profile"
+                                onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.facebook.com/japhet.cordova.2024', '_blank')}
                                 onClick={() => window.open('https://www.facebook.com/japhet.cordova.2024', '_blank')}
                             >
                                 <svg 
@@ -110,6 +127,10 @@ export function Connect(){
                         <div className="flex flex-col gap-1">
                         <div
                             className="w-full flex justify-between bg-background2 rounded-md p-2 hover:bg-accent transition-colors duration-150 cursor-pointer items-center h-auto"
+                            role="button"
+                            tabIndex={0}
+                            aria-label="Visit UMTC page"
+                            onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.facebook.com/umtccomputingeducatio', '_blank')}
                             onClick={() => window.open('https://www.facebook.com/umtccomputingeducation', '_blank')}
                         >
                             <p className="text-xs text-muted-foreground overflow-hidden">University of Mindanao Tagum City (UMTC) Computing Education Department</p>
@@ -117,6 +138,10 @@ export function Connect(){
                         </div>
                         <div
                             className="w-full flex justify-between bg-background2 rounded-md p-2 hover:bg-accent transition-colors duration-150 cursor-pointer items-center h-auto"
+                            role="button"
+                            tabIndex={0}
+                            aria-label="Visit CLC page"
+                            onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.facebook.com/clctagum', '_blank')}
                             onClick={() => window.open('https://www.facebook.com/clctagum', '_blank')}
                         >
                             <p className="text-xs text-muted-foreground">Christian Life Center (CLC) Tagum City</p>
