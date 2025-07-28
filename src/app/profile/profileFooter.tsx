@@ -2,9 +2,9 @@
 
 export const ProfileFooter = () =>{
     return(
-        <div className="border-t mt-8 mb-4 border-accent flex justify-between">
+        <footer className="border-t mt-8 mb-4 border-accent flex justify-between"  role="contentinfo">
             <p className="text-xs p-2">© 2025 Japhet Cordova. All rights reserved.</p>
-            <p className="text-xs p-2">Feedback</p>
-        </div>
+            <button className="text-xs p-2 hover:font-semibold hover:cursor-pointer" aria-label="Provide feedback">Feedback</button>
+        </footer>
     )
 }
