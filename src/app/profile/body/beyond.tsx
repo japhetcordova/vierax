@@ -29,12 +29,11 @@ export function Beyond(){
             </CardHeader>
             <CardContent className="mt-0 pl-3.5">
                 <p>
-                    When not writing code, I focus on learning about emerging technologies, minimalism, and startup culture.
+                    When not coding, I explore business startups, leadership, the mindset of successful entrepreneurs, and minimalism. 
                 </p>
                 <br />
                 <p>
-                    I share my knowledge through content creation and community building.
-                    
+                    I enjoy helping others through tutorials, mentoring, and eventually plan to launch my own course.
                 </p>
             </CardContent>
         </Card>

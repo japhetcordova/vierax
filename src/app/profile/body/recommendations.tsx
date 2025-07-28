@@ -9,8 +9,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel"
 
 export function Recommendation(){
@@ -51,11 +49,7 @@ export function Recommendation(){
                         {Array.from({ length: 5 }).map((_, index) => (
                         <CarouselItem key={index}>
                             <div className="p-1">
-                            <Card>
-                                <CardContent className="flex aspect-square items-center justify-center p-2">
-                                <span className="text-4xl font-semibold">{index + 1}</span>
-                                </CardContent>
-                            </Card>
+                                <p className="text-4xl font-semibold">{index + 1}</p>
                             </div>
                         </CarouselItem>
                         ))}

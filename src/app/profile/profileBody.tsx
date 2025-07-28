@@ -11,8 +11,8 @@ import { Recommendation } from "./body/recommendations"
 export const ProfileBody = () =>{
     return(
         <div className="flex flex-col gap-y-2 w-full mt-4">
-            <div className="flex flex-col md:flex-row gap-x-2 w-full">
-                <div className="flex flex-col flex-1 gap-y-2 basis-1">
+            <div className="flex flex-col md:flex-row gap-2 w-full">
+                <div className="flex flex-col flex-1 gap-2 basis-1">
                     <div className="basis-1/2">
                         <About/>
                     </div>
@@ -25,7 +25,7 @@ export const ProfileBody = () =>{
                     <Timeline/>
                 </div>                 
             </div>
-            <div className="flex flex-col md:flex-row gap-x-2 w-full">
+            <div className="flex flex-col md:flex-row gap-2 w-full">
                 <div className="flex-2">
                     <Beyond/>
                 </div>  
@@ -34,7 +34,7 @@ export const ProfileBody = () =>{
                     <Projects/>
                 </div>                 
             </div>
-            <div className="flex flex-col md:flex-row gap-x-2 w-full">
+            <div className="flex flex-col md:flex-row gap-2 w-full">
                 <div className="flex-1">
                     <Certifications/>
                 </div>  
@@ -43,7 +43,7 @@ export const ProfileBody = () =>{
                     <Recommendation/>
                 </div>                 
             </div>
-            <div className="flex flex-col md:flex-row gap-x-2 w-full">
+            <div className="flex flex-col md:flex-row gap-2 w-full">
                 <div className="flex-2">
                     <Connect/>
                 </div>  
