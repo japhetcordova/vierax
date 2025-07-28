@@ -43,8 +43,8 @@ export function Connect(){
                             role="button"
                             tabIndex={0}
                             aria-label="Schedule a call via Calendly"
-                            onKeyDown={(e) => e.key === 'Enter' && window.open('https://calendly.com/japhetcordova9/schedule-a-call', '_blank')}
-                            onClick={() => window.open('https://calendly.com/japhetcordova9/schedule-a-call', '_blank')}
+                            onKeyDown={(e) => e.key === 'Enter' && window.open('https://calendly.com/japhetcordova9/schedule-a-call', '_blank', 'noopener,noreferrer')}
+                            onClick={() => window.open('https://calendly.com/japhetcordova9/schedule-a-call', '_blank', 'noopener,noreferrer')}
                         >
                             <h1 className="text-sm  font-semibold mb-0.5">Schedule a Call</h1>
                             <ChevronRight className="h-4.5 w-4.5"/>
@@ -70,8 +70,8 @@ export function Connect(){
                                 role="button"
                                 tabIndex={0}
                                 aria-label="Visit GitHub profile"
-                                onKeyDown={(e) => e.key === 'Enter' && window.open('https://github.com/japhetcordova', '_blank')}
-                                onClick={() => window.open('https://github.com/japhetcordova', '_blank')}
+                                onKeyDown={(e) => e.key === 'Enter' && window.open('https://github.com/japhetcordova', '_blank', 'noopener,noreferrer')}
+                                onClick={() => window.open('https://github.com/japhetcordova', '_blank', 'noopener,noreferrer')}
                             >
                                 <svg 
                                     width="20" 
@@ -88,8 +88,8 @@ export function Connect(){
                                 role="button"
                                 tabIndex={0}
                                 aria-label="Visit LinkedIn profile"
-                                onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.linkedin.com/in/japhet-cordova-2aa591223/', '_blank')}
-                                onClick={() => window.open('https://www.linkedin.com/in/japhet-cordova-2aa591223/', '_blank')}
+                                onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.linkedin.com/in/japhet-cordova-2aa591223/', '_blank', 'noopener,noreferrer')}
+                                onClick={() => window.open('https://www.linkedin.com/in/japhet-cordova-2aa591223/', '_blank', 'noopener,noreferrer')}
                             >
                                 <svg 
                                     width="20" 
@@ -106,8 +106,8 @@ export function Connect(){
                                 role="button"
                                 tabIndex={0}
                                 aria-label="Visit Facebook profile"
-                                onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.facebook.com/japhet.cordova.2024', '_blank')}
-                                onClick={() => window.open('https://www.facebook.com/japhet.cordova.2024', '_blank')}
+                                onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.facebook.com/japhet.cordova.2024', '_blank', 'noopener,noreferrer')}
+                                onClick={() => window.open('https://www.facebook.com/japhet.cordova.2024', '_blank', 'noopener,noreferrer')}
                             >
                                 <svg 
                                     width="20" 
@@ -130,8 +130,8 @@ export function Connect(){
                             role="button"
                             tabIndex={0}
                             aria-label="Visit UMTC page"
-                            onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.facebook.com/umtccomputingeducatio', '_blank')}
-                            onClick={() => window.open('https://www.facebook.com/umtccomputingeducation', '_blank')}
+                            onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.facebook.com/umtccomputingeducatio', '_blank', 'noopener,noreferrer')}
+                            onClick={() => window.open('https://www.facebook.com/umtccomputingeducation', '_blank', 'noopener,noreferrer')}
                         >
                             <p className="text-xs text-muted-foreground overflow-hidden">University of Mindanao Tagum City (UMTC) Computing Education Department</p>
                             <ExternalLink className="h-3.5 w-3.5 basis-5"/>
@@ -141,8 +141,8 @@ export function Connect(){
                             role="button"
                             tabIndex={0}
                             aria-label="Visit CLC page"
-                            onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.facebook.com/clctagum', '_blank')}
-                            onClick={() => window.open('https://www.facebook.com/clctagum', '_blank')}
+                            onKeyDown={(e) => e.key === 'Enter' && window.open('https://www.facebook.com/clctagum', '_blank', 'noopener,noreferrer')}
+                            onClick={() => window.open('https://www.facebook.com/clctagum', '_blank', 'noopener,noreferrer')}
                         >
                             <p className="text-xs text-muted-foreground">Christian Life Center (CLC) Tagum City</p>
                             <ExternalLink className="h-3.5 w-3.5"/>
