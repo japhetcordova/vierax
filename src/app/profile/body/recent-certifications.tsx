@@ -38,7 +38,7 @@ export function Certifications(){
                 {Certificates.map((cert, idx) => (
                     <div
                         key={idx}
-                        className="w-full bg-background rounded-md p-2 hover:bg-accent transition-colors duration-150"
+                        className="w-full bg-background2 rounded-md p-2 hover:bg-accent transition-colors duration-150"
                     >
                         <h1 className="text-sm font-semibold mb-0.5">{cert.certificate}</h1>
                         <p className="text-xs text-muted-foreground">{cert.company}</p>

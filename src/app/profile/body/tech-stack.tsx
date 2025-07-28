@@ -15,7 +15,7 @@ export function Stack(){
     ]
 
     return(
-        <Card className="py-4 h-full">
+        <Card className="py-4 h-full truncate">
             <CardHeader>
                 <CardTitle className="m-0">
                     <div className="flex items-center text-xl">

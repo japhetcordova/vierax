@@ -29,16 +29,16 @@ export function About(){
             </CardHeader>
             <CardContent className="mt-0 pl-3.5">
                 <p>
-                    I&apos;m a full-stack software engineer specializing in developing solutions with JavaScript, Python, and PHP. I work on projects including building modern websites, web applications, mobile apps, search engine optimization, digital marketing, and making code tutorials.
+                    I&apos;m a Full-stack developer specializing in Next.js, with additional experience in Flutter. I&apos;ve worked on a variety of projects, including modern websites, web applications, mobile apps, SEO, digital marketing, and educational tutorials.
                 </p>
                 <br />
                 <p>
-                    I&apos;ve helped startups and MSMEs grow and streamline their processes through software solutions. I&apos;ve also built a community of over 200,000 developers sharing knowledge and mentorship.
+                    I&apos;ve helped startups and agencies streamline their operations through tailored software solutions, and I&apos;ve built a developer community of over 50 members focused on knowledge sharing and mentorship.
                     
                 </p>
                 <br />
                 <p>
-                    Lately, I&apos;ve been diving deeper into the world of artificial intelligence, focusing on integrating AI tools and techniques into modern applications. My work now includes developing AI-powered solutions, creating intelligent applications, and leveraging generative AI to optimize development workflows and deliver cutting-edge technology.
+                    Recently, I&apos;ve become increasingly immersed in the field of artificial intelligence. My current focus is on integrating AI tools and techniques into modern applications—developing intelligent solutions, building AI-powered products, and leveraging generative AI to enhance development workflows and deliver cutting-edge technology.
                 </p>
             </CardContent>
         </Card>
