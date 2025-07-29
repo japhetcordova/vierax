@@ -29,16 +29,19 @@ export function About(){
             </CardHeader>
             <CardContent className="mt-0 pl-3.5">
                 <p>
-                    I&apos;m a Full-stack developer specializing in Next.js, with additional experience in Flutter. I&apos;ve worked on a variety of projects, including modern websites, web applications, mobile apps, SEO, digital marketing, and educational tutorials.
+                    I am a full-stack developer and software engineer with two years of hands-on experience designing and building software solutions, debugging complex issues, developing SaaS platforms, creating professional portfolios, and engineering comprehensive Human Resource Management Systems (HRMS).
                 </p>
                 <br />
                 <p>
-                    I&apos;ve helped startups and agencies streamline their operations through tailored software solutions, and I&apos;ve built a developer community of over 50 members focused on knowledge sharing and mentorship.
-                    
+                    My strengths lie in programming with modern technologies, paired with fast learning, creativity, leadership, and product-level thinking. I’m passionate about teaching, simplifying complexity, and building organized solutions that make a real impact.                    
                 </p>
                 <br />
                 <p>
-                    Recently, I&apos;ve become increasingly immersed in the field of artificial intelligence. My current focus is on integrating AI tools and techniques into modern applications—developing intelligent solutions, building AI-powered products, and leveraging generative AI to enhance development workflows and deliver cutting-edge technology.
+                    I value emphasis, efficiency, high quality, strong foundational systems, security, data privacy, and cutting-edge product excellence.
+                </p>
+                <br />
+                <p>
+                    Currently, I am taking a major leap into AI development—focusing on building intelligent automations and data-driven solutions that simplify workflows, enhance decision-making, and empower business leaders to make well-informed, strategic choices with confidence.
                 </p>
             </CardContent>
         </Card>
