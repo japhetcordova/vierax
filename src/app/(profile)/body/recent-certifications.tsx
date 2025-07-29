@@ -8,10 +8,10 @@ export function Certifications(){
     const link = "/profile";
 
     const Certificates = [
-        {certificate: "Cert1", company: "comp1"},
-        {certificate: "Cert2", company: "comp2"},
-        {certificate: "Cert3", company: "comp3"},
-        {certificate: "Cert4", company: "comp4"},
+        {certificate: "Coming soon", company: "free code camp"},
+        {certificate: "Coming soon", company: "Deeplearning.AI"},
+        {certificate: "Coming soon", company: "University of Helsinki"},
+        {certificate: "Coming soon", company: "Google"},
     ]
 
     return(
